@@ -1,0 +1,29 @@
+package javaexamples;
+
+import java.util.Scanner;
+
+public class Examples05 {
+
+	public static void main(String[] args) {
+		/*
+		 * Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın.
+		 * Aşağıdaki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp
+		 * ekrana yazdırın.
+		 * 
+		 * Formül Kilo (kg) / Boy(m) * Boy(m)
+		 */
+
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Lütfen boyunuzu metre olarak giriniz:");
+		double boy = scan.nextDouble();
+
+		System.out.print("Lütfen kilonuzu (kg) giriniz:");
+		double kilo = scan.nextDouble();
+
+		System.out.print("Vücut Kitle İndeks değeriniz :" + (kilo / (boy * boy)));
+
+		scan.close();
+
+	}
+
+}
